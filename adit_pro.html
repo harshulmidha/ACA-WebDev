@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Animation</title>
+        <style>
+            * {
+                padding: 0px;
+                margin: 0px;
+                font-family: sans-serif;
+            }
+
+            body {
+                background: #000;
+            }
+
+            .ani {
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+            }
+
+            .ani span {
+                display: block;
+            }
+
+            .text1 {
+                color: white;
+                font-size: 60px;
+                font-weight: 700;
+                letter-spacing: 6px;
+                margin-bottom: 20px;
+                background: black;
+                position: relative;
+                animation: text 3s 1;
+            }
+
+            .text2 {
+                font-size: 30px;
+                color: #f44;
+            }
+
+            @keyframes text {
+                0% {
+                    color: black;
+                    margin-bottom: -40px;
+                }
+
+                30% {
+                    letter-spacing: 25px;
+                    margin-bottom: -40px;
+                }
+
+                85% {
+                    letter-spacing: 6px;
+                    margin-bottom: -40px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="ani">
+            <span class="text1">WELCOME TO</span>
+            <span class="text2">ANIMATIONS</span>
+        </div>
+    </body>
+
+</html>
